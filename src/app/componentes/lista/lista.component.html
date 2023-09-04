@@ -1,0 +1,20 @@
+<div>
+    {{titulo}}
+</div>
+<div *ngIf="titulo=='Productos'">
+    <div *ngFor="let l of lista">
+        <div>Nombre:{{l.nombre}} </div>
+        <div>Categorias:{{l.categoria}}</div>
+        <div>Precio:{{l.precio}}</div>
+        <div>Medida:{{l.medida}}</div>
+    </div>
+</div>
+<div *ngIf="titulo=='Usuarios'">
+    <div *ngFor="let l of lista">
+        <div>Nombre:{{l.nombre}} </div>
+        <div>Tipo:{{l.tipo}} </div>
+        <div>DNI/RUC:{{l.dni_ruc}} </div>
+        <button type="button" (click)="verPerfil(l.dni_ruc)">Ver</button>
+    </div>
+</div>
+

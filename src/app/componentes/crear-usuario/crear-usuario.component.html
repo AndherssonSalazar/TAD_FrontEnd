@@ -1,0 +1,27 @@
+<div class="container-fluid" style="height: 100%;">
+    <div class="row" style="height: 25%" ></div>
+    <div class="row" style="height: 50%" >
+        <div class="col-3"></div>
+        <div class="col-6">
+            <div class="row" style="height: 100%">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" class="col" style="height: 20%;" type="text" placeholder="Nombre" [(ngModel)]="nombre">
+                <div   class="w-100"></div>
+                <label for="dni_ruc">DNI/RUC</label>
+                <input id="dni_ruc" class="col" style="height: 20%;" type="text" placeholder="DNI/RUC" [(ngModel)]="dni_ruc">
+                <div   class="w-100"></div>
+                <label for="tipo">Tipo</label>
+                <select id="tipo" [(ngModel)]="tipo_seleccionado" class="col" style="height: 20%;">
+                    <option [value]="i" *ngFor="let i of tipo">{{i}}</option>
+                </select>
+                <div   class="w-100"></div>
+                <label for="clave">Clave</label>
+                <input id="clave" class="col" style="height: 20%;" type="password" placeholder="CLAVE" [(ngModel)]="clave">
+                <div   class="w-100"></div>
+                <button class="col" style="height: 20%;" type="button" (click)="crear()">Crear</button>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row" style="height: 25%;" ></div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container-fluid" style="height: 100%;">
+    <div class="row" style="height: 25%" ></div>
+    <div class="row" style="height: 50%" >
+        <div class="col-3"></div>
+        <div class="col-6">
+            <div class="row" style="height: 100%">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" class="col" style="height: 12%;" type="text" placeholder="Nombre" [(ngModel)]="nombre">
+                <div   class="w-100"></div>
+                <label for="categoria">Categoria</label>
+                <select id="categoria" [(ngModel)]="categoria_seleccionada" class="col" style="height: 12%;">
+                    <option [value]="i" *ngFor="let i of categoria">{{i}}</option>
+                </select>
+                <div   class="w-100"></div>
+                <label for="precio">Precio</label>
+                <input id="precio" class="col" style="height: 12%;" type="number" placeholder="Precio" [(ngModel)]="precio">
+                <div   class="w-100"></div>
+                <label for="medida">Medida</label>
+                <input id="medida" class="col" style="height: 12%;" type="text" placeholder="Medida" [(ngModel)]="medida">
+                <div   class="w-100"></div>
+                <button class="col" style="height: 12%;" type="button" (click)="crear()">Crear</button>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row" style="height: 25%;" ></div>
+</div>

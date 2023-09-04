@@ -1,0 +1,27 @@
+<nav class="navbar navbar-collapse navbar-light bg-light" style="height: 10%;">
+  <a class="navbar-brand" href="#">APP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor03" [ngbCollapse]="isCollapsed">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" style="background-color: black; border-color: aliceblue;">
+        <a class="nav-link" style="color: aliceblue;" (click)="irBusqueda()">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" style="background-color: black; border-color: aliceblue;">
+        <a class="nav-link" style="color: aliceblue;" href="#">Features</a>
+      </li>
+      <li class="nav-item" style="background-color: black; border-color: aliceblue;">
+        <a class="nav-link" style="color: aliceblue;"  href="#">Pricing</a>
+      </li>
+      <li class="nav-item" style="background-color: black; border-color: aliceblue;">
+        <a class="nav-link" style="color: aliceblue;"  href="#">About</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>

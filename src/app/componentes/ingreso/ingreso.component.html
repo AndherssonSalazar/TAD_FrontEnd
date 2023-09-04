@@ -1,0 +1,18 @@
+<div class="container-fluid" style="height: 90%;">
+    <div class="row" style="height: 25%" ></div>
+    <div class="row" style="height: 50%" >
+        <div class="col-3"></div>
+        <div class="col-6">
+            <div class="row" style="height: 100%">
+                <input class="col" style="height: 20%;" type="text" placeholder="DNI/RUC" [(ngModel)]="dni_ruc">
+                <div   class="w-100"></div>
+                <input class="col" style="height: 20%;" type="password" placeholder="CLAVE" [(ngModel)]="clave">
+                <div   class="w-100"></div>
+                <button class="col-6" style="height: 20%;" routerLink="crear_usuario">Crear</button>
+                <button class="col-6" style="height: 20%;" type="button" (click)="ingresar()">Ingresar</button>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row" style="height: 25%;" ></div>
+</div>
